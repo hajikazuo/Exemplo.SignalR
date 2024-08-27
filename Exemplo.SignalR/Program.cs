@@ -1,5 +1,3 @@
-using Exemplo.SignalR.Hubs;
-
 namespace Exemplo.SignalR
 {
     public class Program
@@ -28,8 +26,6 @@ namespace Exemplo.SignalR
             app.UseRouting();
 
             app.UseAuthorization();
-
-            app.MapHub<ChatHub>("/chatHub");
 
             app.MapControllerRoute(
                 name: "default",
